@@ -19,17 +19,17 @@ onUnmounted(() => {
 
 <template>
   <main
-    class="min-h-screen bg-gradient-to-r from-green-900 to-blue-700 py-8 text-white"
+    class="min-h-screen bg-gradient-to-r from-yellow-900 to-blue-700 py-8 text-white"
   >
     <div
       v-if="currentCharacter"
-      class="flex flex-col items-center justify-center gap-6"
+      class="flex flex-col items-center gap-6 justify-self-center"
     >
       <img
         :src="currentCharacter.card.imageUrl"
         :alt="currentCharacter.card.name"
       />
-      <h1 class="text-white-800 text-6xl font-bold">
+      <h1 class="justify-center text-6xl font-bold text-slate-200">
         This card is {{ currentCharacter.card.name }}
       </h1>
       <pre>{{ currentCharacter.card.originalText }}</pre>
