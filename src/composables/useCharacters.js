@@ -21,6 +21,7 @@ const useCharacters = () => {
     page.value++
   }
 
+  //this is the getCharacter in the origianl video process
   const fetchCharacter = async (id) => {
     const { data } = await api.instance.get(`/cards/${id}`)
     currentCharacter.value = data

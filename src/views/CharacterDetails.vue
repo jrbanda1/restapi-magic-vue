@@ -30,7 +30,7 @@ onUnmounted(() => {
         :alt="currentCharacter.card.name"
       />
       <h1 class="text-white-800 text-6xl font-bold">
-        Hi, I'm {{ currentCharacter.card.name }}
+        This card is {{ currentCharacter.card.name }}
       </h1>
       <pre>{{ currentCharacter.card.originalText }}</pre>
     </div>
